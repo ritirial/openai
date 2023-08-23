@@ -1,0 +1,24 @@
+<div>
+    <Head>
+        <title>OpenAI Quickstart</title>
+    </Head>
+
+    <main className=main>
+        <h3>Let's generate an image!</h3>
+        <form>
+            <input
+            type="text"
+            name="picture"
+            placeholder="Describe your desired image..."
+            [(ngModel)]="description" />
+            <input
+                type="button"
+                value="Generate"
+                (click)="postCompletion()"
+             />
+        </form>
+        <img className=result src="{{result}}">
+
+    </main>
+
+</div>

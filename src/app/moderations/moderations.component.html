@@ -1,0 +1,24 @@
+<div>
+    <Head>
+        <title>OpenAI Quickstart</title>
+    </Head>
+
+    <main className=main>
+        <h3>Check if a prompt follows OpenAI's content policy</h3>
+        <form>
+            <input
+            type="text"
+            name="prompt"
+            placeholder="Write your prompt..."
+            [(ngModel)]="prompt" />
+            <input
+                type="button"
+                value="Check"
+                (click)="postCompletion()"
+             />
+        </form>
+        <div className=result>{{result}}</div>
+
+    </main>
+
+</div>

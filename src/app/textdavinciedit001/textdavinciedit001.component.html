@@ -1,0 +1,24 @@
+<div>
+    <Head>
+        <title>OpenAI Quickstart</title>
+    </Head>
+
+    <main className=main>
+        <h3>Write a sentence to fix any spelling issues</h3>
+        <form>
+            <input
+            type="text"
+            name="sentence"
+            placeholder="Write your sentence..."
+            [(ngModel)]="sentence" />
+            <input
+                type="button"
+                value="Check and Fix"
+                (click)="postCompletion()"
+             />
+        </form>
+        <div className=result>{{result}}</div>
+
+    </main>
+
+</div>
