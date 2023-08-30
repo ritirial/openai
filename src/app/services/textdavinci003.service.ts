@@ -15,7 +15,7 @@ export class Textdavinci003Service {
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer '
+      'Authorization': 'Bearer ' + import.meta.env['NG_APP_KEY'],
     })
   }
 
